@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Website Builder PRO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#4361ee',
+              'primary-dark': '#3a0ca3',
+              accent: '#4cc9f0',
+              'accent-light': '#80ffdb',
+              success: '#2ecc71',
+              warning: '#f9c74f',
+              danger: '#e63946',
+              dark: '#121230',
+              darker: '#0a0a1f',
+              light: '#f8f9fa',
+              'card-border': 'rgba(255, 255, 255, 0.15)',
+            },
+            fontFamily: {
+                sans: ['Poppins', 'sans-serif'],
+                display: ['Montserrat', 'sans-serif'],
+            },
+            animation: {
+              float: 'float 6s ease-in-out infinite',
+            },
+            keyframes: {
+              float: {
+                '0%': { transform: 'translateY(0px)' },
+                '50%': { transform: 'translateY(-15px)' },
+                '100%': { transform: 'translateY(0px)' },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        background-color: #0a0a1f;
+        background-image: 
+          radial-gradient(circle at 5% 10%, rgba(76, 201, 240, 0.08) 0%, transparent 25%),
+          radial-gradient(circle at 95% 90%, rgba(67, 97, 238, 0.08) 0%, transparent 25%);
+        background-attachment: fixed;
+      }
+      @keyframes toast-in {
+        from {
+          transform: translateX(calc(100% + 2rem));
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      .animate-toast-in {
+        animation: toast-in 0.5s cubic-bezier(0.21, 1.02, 0.73, 1) forwards;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.25.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "name": "AI Website Builder PRO",
+  "description": "An advanced AI-powered tool to generate complete, single-page websites from a simple prompt. Describe your business, choose features, and let Gemini build the code for you. Includes a code editor and live preview.",
+  "requestFramePermissions": []
+}
